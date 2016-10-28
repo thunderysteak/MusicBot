@@ -719,6 +719,25 @@ class MusicBot(discord.Client):
 
         print()
         # t-t-th-th-that's all folks!
+        
+    #Cuddle reminder!
+    async def cmd_cuddle(self, channel):
+        """
+        Usage:
+            {command_prefix}cuddle
+        It's a cuddle remidner!
+        """
+        await self.safe_send_message(channel, "Don't forget to cuddle a worgen today, /wowg/! :3")  
+        
+   #Requested by Castelia    
+   async def cmd_bark(self, channel):
+        """
+        Usage:
+            {command_prefix}bark
+        It barks!
+        """
+        await self.safe_send_message(channel, "barkbark!")  
+
 
     async def cmd_help(self, command=None):
         """
